@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gambling Website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Gambling Website</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Sign In/Log In</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Today's Win</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <div class="container">
+      <label for="user-number">Enter a number between 1-50:</label>
+      <input type="number" id="user-number" min="1" max="50">
+      <label for="bet-amount">Enter your bet amount:</label>
+      <input type="number" id="bet-amount" min="1">
+      <button id="spin-btn">Spin the Wheel</button>
+      <div id="result"></div>
+      <div id="stats">
+        <p>Wins: <span id="win-counter">0</span> | Losses: <span id="loss-counter">0</span></p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Gambling Website. All rights reserved.</p>
+  </footer>
+
+  <script src="javascript.js"></script>
+</body>
+</html>
